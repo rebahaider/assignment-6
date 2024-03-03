@@ -1,13 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Retro Forum</title>
+
+    <!-- DaisyUI Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header></header>
+
+<body class="container mulish">
+    <header>
+        <!-- Nav Bar -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <!-- Menu Icons For Mobile Device -->
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li>
+                            <a>
+                                <img src="images/Frame.png" alt="Home">
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="images/Frame (1).png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="images/Frame (2).png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="images/Frame (3).png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-3xl font-black text-[#12132D]">ReTro</a>
+            </div>
+            <!-- Menu Icons -->
+            <div class="navbar hidden lg:flex justify-end">
+                <ul class="menu menu-horizontal">
+                    <li><a class="rounded-full"><img src="images/Frame.png" alt=""></a></li>
+                    <li><a class="rounded-full"><img src="images/Frame (1).png" alt=""></a></li>
+                    <li><a class="rounded-full"><img src="images/Frame (2).png" alt=""></a></li>
+                    <li><a class="rounded-full"><img src="images/Frame (3).png" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="navbar-en">
+                <a class="btn bg-[#797DFC] rounded-full text-white px-7 font-bold">Sign In</a>
+            </div>
+        </div>
+    </header>
     <main></main>
     <footer></footer>
 </body>
+
 </html>
