@@ -16,7 +16,7 @@
 <body class="container mulish space-y-14">
     <header>
         <!-- Nav Bar -->
-        <div class="navbar bg-base-100">
+        <div class="navbar bg-base-100 gap-8">
             <div class="navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -67,21 +67,21 @@
             </div>
         </div>
     </header>
-    <main class="">
+    <main class="space-y-14">
         <!-- Banner Section -->
-        <div class="bg-no-repeat bg-bottom bg-[#12132D] w-[1170px] h-[550px] rounded-2xl mx-auto text-white grid grid-cols-2 p-28 gap-20" style="background-image: url(images/bgbanner.png);">
+        <div class="bg-no-repeat bg-bottom bg-[#12132D] lg:w-[1170px] lg:h-[550px] rounded-2xl mx-auto text-white  grid-cols-1 lg:grid grid-cols-2 ml-6 p-8 lg:p-28 lg:gap-20" style="background-image: url(images/bgbanner.png);">
             <div class="space-y-8">
-                <h1 class="font-extrabold text-6xl">Welcome to the<br>
+                <h1 class="font-extrabold lg:text-6xl">Welcome to the<br>
                     <span class="text-purple-400">ReTro</span>
                     Forum
                 </h1>
                 <p>Share your favorite opinion and win and wp forum coffee mug!</p>
-                <div class="relative">
-                    <input class="w-full max-w-xs p-4 rounded-full" type="text" placeholder="Search Here Anything">
-                    <button class="btn bg-[#797DFC] -ml-28 rounded-full px-6">Search</button>
+                <div class="relative space-y-4 ">
+                    <input class="lg:w-full max-w-xs p-4 rounded-full" type="text" placeholder="Search Here Anything">
+                    <button class="btn bg-[#797DFC] lg:-ml-28 rounded-full lg:px-6">Search</button>
                 </div>
             </div>
-            <div class="bg-white w-[370px] h-[288px] text-black space-y-8 rounded-2xl p-10">
+            <div class="bg-white lg:w-[370px] lg:h-[288px] text-black space-y-8 rounded-2xl p-5 lg:p-10 mt-8">
                 <div class="grid grid-cols-2"><h3>Registered Users</h3> <h3>01</h3></div>
                 <div class="grid grid-cols-2"><h3>Forum</h3> <h3>05</h3></div>
                 <div class="grid grid-cols-2"><h3>Topics</h3> <h3>01</h3></div>
@@ -89,8 +89,48 @@
                 
             </div>
         </div>
+        <!-- Let’s Discuss Section -->
+        <section class="space-y-20">
+            <div class="text-center space-y-4">
+                <h1 class="text-3xl font-extrabold text-black">Let’s Discuss</h1>
+                <p class="inter">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
+            </div>
+            <div class="grid-cols-1 lg:grid grid-cols-2 lg:ml-20 gap-10">
+                <div id="discuss-topics" class="space-y-14">
+                    
+                </div>
+                <!-- Title Section -->
+                <div id="title" class="bg-gray-100 flex justify-around p-3 gap-8 rounded-2xl">
+                    <h1 class="font-bold">Title</h1>
+                    <p class="inter">Make As Read <span>(4)</span></p>
+                    <hr>
+                    
+                </div>
+            </div>
+        </section>
+        
     </main>
-    <footer></footer>
+    <!-- Footer Section -->
+    <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
+        <nav class="">
+          <img src="images/logo.png" alt="">
+        </nav> 
+        <div>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a <br> piece of classical Latin literature from 45 BC</p>
+        </div>
+        <nav>
+          <div class="grid grid-flow-col gap-4">
+            <a><img src="images/1.png" alt=""></a>
+            <a><img src="images/2.png" alt=""></a>
+            <a><img src="images/3.png" alt=""></a>
+            <a><img src="images/4.png" alt=""></a>
+          </div>
+        </nav> 
+        <aside>
+          <p>2017, All Rights Reserved.</p>
+        </aside>
+      </footer>
+    <script src="api.js"></script>
 </body>
 
 </html>
