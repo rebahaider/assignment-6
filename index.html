@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="container mulish">
+<body class="container mulish space-y-14">
     <header>
         <!-- Nav Bar -->
         <div class="navbar bg-base-100">
@@ -54,12 +54,12 @@
                 <a class="btn btn-ghost text-3xl font-black text-[#12132D]">ReTro</a>
             </div>
             <!-- Menu Icons -->
-            <div class="navbar hidden lg:flex justify-end">
+            <div class="navbar hidden lg:flex justify-end mt-3">
                 <ul class="menu menu-horizontal">
-                    <li><a class="rounded-full"><img src="images/Frame.png" alt=""></a></li>
-                    <li><a class="rounded-full"><img src="images/Frame (1).png" alt=""></a></li>
-                    <li><a class="rounded-full"><img src="images/Frame (2).png" alt=""></a></li>
-                    <li><a class="rounded-full"><img src="images/Frame (3).png" alt=""></a></li>
+                    <li><a class="rounded-full tooltip" data-tip="Home"><img src="images/Frame.png" alt=""></a></li>
+                    <li><a class="rounded-full tooltip" data-tip="Edit"><img src="images/Frame (1).png" alt=""></a></li>
+                    <li><a class="rounded-full tooltip" data-tip="Add"><img src="images/Frame (2).png" alt=""></a></li>
+                    <li><a class="rounded-full tooltip" data-tip="Home"><img src="images/Frame (3).png" alt=""></a></li>
                 </ul>
             </div>
             <div class="navbar-en">
@@ -67,7 +67,29 @@
             </div>
         </div>
     </header>
-    <main></main>
+    <main class="">
+        <!-- Banner Section -->
+        <div class="bg-no-repeat bg-bottom bg-[#12132D] w-[1170px] h-[550px] rounded-2xl mx-auto text-white grid grid-cols-2 p-28 gap-20" style="background-image: url(images/bgbanner.png);">
+            <div class="space-y-8">
+                <h1 class="font-extrabold text-6xl">Welcome to the<br>
+                    <span class="text-purple-400">ReTro</span>
+                    Forum
+                </h1>
+                <p>Share your favorite opinion and win and wp forum coffee mug!</p>
+                <div class="relative">
+                    <input class="w-full max-w-xs p-4 rounded-full" type="text" placeholder="Search Here Anything">
+                    <button class="btn bg-[#797DFC] -ml-28 rounded-full px-6">Search</button>
+                </div>
+            </div>
+            <div class="bg-white w-[370px] h-[288px] text-black space-y-8 rounded-2xl p-10">
+                <div class="grid grid-cols-2"><h3>Registered Users</h3> <h3>01</h3></div>
+                <div class="grid grid-cols-2"><h3>Forum</h3> <h3>05</h3></div>
+                <div class="grid grid-cols-2"><h3>Topics</h3> <h3>01</h3></div>
+                <div class="grid grid-cols-2"><h3>Replies</h3> <h3>01</h3></div>
+                
+            </div>
+        </div>
+    </main>
     <footer></footer>
 </body>
 
