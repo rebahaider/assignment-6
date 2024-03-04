@@ -57,7 +57,7 @@ const displayLatestPost = data => {
         console.log(element);
         const div = document.createElement('div');
         div.innerHTML = `
-        <div class="card w-96 bg-base-100 shadow-xl">
+        <div class="card lg:w-96 bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
               <img src="${element.cover_image}" alt="Shoes" class="rounded-xl" />
             </figure>
